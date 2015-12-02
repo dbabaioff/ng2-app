@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    <hello-app>Loading...</hello-app>
+    <app>Loading...</app>
 </body>
 
 <!-- ES6-related imports -->
@@ -18,10 +18,12 @@
     System.config({defaultJSExtensions: true});
 </script>
 <script src="/node_modules/angular2/bundles/angular2.min.js"></script>
+<script src="/dist/components/app.js"></script>
+<script src="/dist/bootstrap.js"></script>
 
 <script>
     //bootstrap the Angular2 application
-    System.import('dist/hello').catch(console.log.bind(console));
+    System.import('dist/bootstrap').catch(console.log.bind(console));
 </script>
 
 </html>
